@@ -40,7 +40,7 @@ sudo apt update
 sudo apt upgrade -y
 
 # Install required dependencies
-sudo apt install -y \
+sudo apt install -y \   
   software-properties-common \
   curl \
   lsb-release \
