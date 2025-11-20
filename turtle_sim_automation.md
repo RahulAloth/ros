@@ -41,9 +41,20 @@ Make sure you have it: sudo apt install ros-jazzy-turtlesim -y
  Or 
     ros2 pkg create --build-type ament_python turtle_sim --dependencies rclpy geometry_msgs
 
-Copy turtle_square.py to ../src
+Copy [turtle_square.py](https://github.com/RahulAloth/ros/blob/main/turtle_square.py) to ../src
 
-colcon build --packages-select turtle_sim --install-base ~/ros2Installs
+Copy [setup.py](https://github.com/RahulAloth/ros/blob/main/turtle_sim/setup.py) to turtle_sim/setup.py
+Do the following:
+
+    colcon build --packages-select turtle_square --install-base ~/ros2Installs
+
+In a new Window, run
+
+    ros2 run turtle_square turtle_square
+
+Now we can see Turtle is moving across the window, according to our program.
+
+
 
 
 
